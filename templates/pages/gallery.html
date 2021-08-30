@@ -1,0 +1,395 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<header class="home3">
+  {% include 'partials/_topbar.html' %} {% include 'partials/_navbar.html' %}
+  <div class="inner-header">
+    <div class="container">
+      <div class="col-md-12">
+        <!-- heading-text  -->
+        <div class="heading-text">
+          <h1>Gallery</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <!-- /heading-text  -->
+      </div>
+    </div>
+  </div>
+</header>
+<section class="inner-main gallery">
+  <!-- inner-main -->
+  <div class="container">
+    <div class="row">
+      <!-- rightside -->
+      <div class="col-md-12">
+        <ul class="simplefilter">
+          <li class="active" data-filter="all">All</li>
+          <li data-filter="1">Gym</li>
+          <li data-filter="2">yoga</li>
+          <li data-filter="3">DANCE</li>
+        </ul>
+        <div class="filtr-container">
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="2"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <h4>
+                  <img
+                    src="{% static 'images/gallery-img1.jpg' %}"
+                    alt="blog-lg"
+                  />
+                </h4>
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="1"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <img
+                  src="{% static 'images/gallery-img2.jpg' %}"
+                  alt="blog-lg"
+                />
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="2"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <img
+                  src="{% static 'images/gallery-img3.jpg' %}"
+                  alt="blog-lg"
+                />
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="1"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <img
+                  src="{% static 'images/gallery-img4.jpg' %}"
+                  alt="blog-lg"
+                />
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="1"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <img
+                  src="{% static 'images/gallery-img5.jpg' %}"
+                  alt="blog-lg"
+                />
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="1"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <img
+                  src="{% static 'images/gallery-img6.jpg' %}"
+                  alt="blog-lg"
+                />
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="1"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <img
+                  src="{% static 'images/gallery-img7.jpg' %}"
+                  alt="blog-lg"
+                />
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="2"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <img
+                  src="{% static 'images/gallery-img8.jpg' %}"
+                  alt="blog-lg"
+                />
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-4 filtr-item"
+            data-category="3"
+            data-sort="Busy streets"
+          >
+            <div class="col-md-12">
+              <!--  gallery-img  -->
+              <div class="gallery-img">
+                <img
+                  src="{% static 'images/gallery-img9.jpg' %}"
+                  alt="blog-lg"
+                />
+                <!--  gallery-img-hover  -->
+                <div class="gallery-img-hover">
+                  <a href="#"
+                    ><i class="fa fa-search-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                  <p>
+                    <strong>Time to Try a Bodyweight Workout</strong> <br />
+                    Run, Walk, Swimming
+                  </p>
+                </div>
+                <!--  /gallery-img-hover  -->
+              </div>
+              <!--  /gallery-img  -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- rightside -->
+    </div>
+  </div>
+  <!-- /inner-main -->
+</section>
+<!-- available-appointment-popup -->
+<div
+  class="appointment-popup modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Request an Appointment
+        </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <p>
+            Please confirm that you would like to request the following <br />
+            appointment:
+          </p>
+          <div class="popup-date">
+            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+            <span>July 20, 2018 at 10:00 am – 11:00 am</span>
+          </div>
+          <div class="form-group">
+            <h3>Your Information <span>*:</span></h3>
+            <p>Please enter your name:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="recipient-name"
+              placeholder="Name *"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              class="form-control"
+              id="recipient-phone"
+              placeholder="Phone *"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="recipient-email"
+              placeholder="Email *"
+            />
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="exampleSelect1">
+              <option>Choose Our Staff :</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Services <span>*:</span></p>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" value="" type="checkbox" /> Gym
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" value="" type="checkbox" /> Yoga
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" value="" type="checkbox" />
+                Dance Fitness
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" value="" type="checkbox" />
+                Swimming
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">
+          Request an Appointment
+        </button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /available-appointment-popup -->
+{% endblock %}
