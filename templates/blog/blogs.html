@@ -1,0 +1,124 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<header class="home3">
+  {% include 'partials/_topbar.html' %} {% include 'partials/_navbar.html' %}
+  <div class="inner-header">
+    <div class="container">
+      <div class="col-md-12">
+        <!-- heading-text  -->
+        <div class="heading-text">
+          <h1>Blog</h1>
+          <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            <li><a href="{% url 'blogs' %}">Blogs</a></li>
+          </ul>
+        </div>
+        <!-- /heading-text  -->
+      </div>
+    </div>
+  </div>
+</header>
+<section class="tranier-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <!-- blog-box -->
+        <div class="blog-box">
+          <div class="blog-box-img">
+            <img src="{% static 'images/news-img1.jpg' %}" alt="news-img" />
+          </div>
+          <div class="blog-text">
+            <h4>NEWS</h4>
+            <a href="#">A sloppy practice is better than no practice</a>
+            <p>Gary Coleman | 21 Mar 2018</p>
+          </div>
+        </div>
+        <!-- /blog-box -->
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <!-- blog-box -->
+        <div class="blog-box">
+          <div class="blog-box-img">
+            <img src="{% static 'images/news-img2.jpg' %}" alt="news-img" />
+          </div>
+          <div class="blog-text">
+            <h4>EVENTS</h4>
+            <a href="#">Keeping Good Form When Weight Lifting</a>
+            <p>Gary Coleman | 21 Mar 2018</p>
+          </div>
+        </div>
+        <!-- /blog-box -->
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <!-- blog-box -->
+        <div class="blog-box">
+          <div class="blog-box-img">
+            <img src="{% static 'images/news-img3.jpg' %}" alt="news-img" />
+          </div>
+          <div class="blog-text">
+            <h4>NEWS</h4>
+            <a href="#">Time to Try a Bodyweight Workout</a>
+            <p>Gary Coleman | 21 Mar 2018</p>
+          </div>
+        </div>
+        <!-- /blog-box -->
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <!-- blog-box -->
+        <div class="blog-box">
+          <div class="blog-box-img">
+            <img src="{% static 'images/news-img4.jpg' %}" alt="news-img" />
+          </div>
+          <div class="blog-text">
+            <h4>NEWS</h4>
+            <a href="#">A sloppy practice is better than no practice</a>
+            <p>Gary Coleman | 21 Mar 2018</p>
+          </div>
+        </div>
+        <!-- /blog-box -->
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <!-- blog-box -->
+        <div class="blog-box">
+          <div class="blog-box-img">
+            <img src="{% static 'images/news-img5.jpg' %}" alt="news-img" />
+          </div>
+          <div class="blog-text">
+            <h4>EVENTS</h4>
+            <a href="#">Keeping Good Form When Weight Lifting</a>
+            <p>Gary Coleman | 21 Mar 2018</p>
+          </div>
+        </div>
+        <!-- /blog-box -->
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <!-- blog-box -->
+        <div class="blog-box">
+          <div class="blog-box-img">
+            <img src="{% static 'images/news-img6.jpg' %}" alt="news-img" />
+          </div>
+          <div class="blog-text">
+            <h4>NEWS</h4>
+            <a href="#">Time to Try a Bodyweight Workout</a>
+            <p>Gary Coleman | 21 Mar 2018</p>
+          </div>
+        </div>
+        <!-- /blog-box -->
+      </div>
+      <!-- pagination -->
+      <div class="col-md-12">
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li>
+            <a href="#"
+              >Next <i class="fa fa-angle-double-right" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- /pagination -->
+    </div>
+  </div>
+</section>
+{% endblock %}
