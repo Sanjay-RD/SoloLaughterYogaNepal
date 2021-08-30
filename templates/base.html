@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Standard -->
+    <link rel="shortcut icon" href="{% static 'images/ficon.png' %}" />
+    <!-- Latest Bootstrap min CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'css/bootstrap.min.css' %}"
+      type="text/css"
+    />
+    <!-- Dropdownhover CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'css/bootstrap-dropdownhover.min.css' %}"
+      type="text/css"
+    />
+    <!-- latest fonts awesome -->
+    <link
+      rel="stylesheet"
+      href="{% static 'font/css/font-awesome.min.css' %}"
+      type="text/css"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'css/animate.min.css' %}"
+      type="text/css"
+    />
+    <!-- Style CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'css/style.css' %}"
+      type="text/css"
+    />
+    <!-- Owl Carousel Assets -->
+    <link
+      href="{% static 'owl-carousel/owl.carousel.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static 'owl-carousel/owl.theme.css' %}" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> -->
+    <title>Solo Laughter Nepal</title>
+  </head>
+  <body>
+    {% block content %} 
+    {% endblock %} 
+    {% include 'partials/_footer.html' %}
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-1.x-git.min.js' %}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-dropdownhover.min.js' %}"></script>
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <!--  countTo JavaScript  -->
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery.countTo.js' %}"
+    ></script>
+    <!--  Custom Theme JavaScript  -->
+    <script src="{% static 'js/custom.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'owl-carousel/owl.carousel.js' %}"></script>
+  </body>
+</html>
