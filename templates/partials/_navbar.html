@@ -1,9 +1,11 @@
 {% load static %}
 <!--  top header  -->
-<div id="mainNav" class="navbar-fixed-top">
+{% if '/' == request.path %}
+  <div id="mainNav" class="navbar-fixed-top">         
+{% endif %}
   <div class="container">
     <div class="col-sm-2 col-md-2">
-      <a class="logo" href="#"
+      <a class="logo" href="{% url 'home' %}"
         ><img src="{% static 'image/logo.png' %}" alt="logo"
       /></a>
     </div>
@@ -34,7 +36,7 @@
           <ul class="nav navbar-nav">
             <li class="dropdown">
               <a
-                href="#"
+                href="{% url 'home' %}"
                 class="dropdown-toggle"
                 data-toggle="dropdown"
                 role="button"
@@ -52,8 +54,8 @@
                 ><span>Schedule</span></a
               >
               <ul class="dropdown-menu dropdownhover-bottom" role="menu">
-                <li><a href="booking.html">Booking</a></li>
-                <li><a href="appointment.html">Request Appointment</a></li>
+                <li><a href="{% url 'booking' %}">Booking</a></li>
+                <li><a href="{% url 'appointment' %}">Request Appointment</a></li>
               </ul>
             </li>
 
@@ -107,5 +109,7 @@
     </div>
   </div>
   <!-- /.container-fluid -->
-</div>
+{% if '/' == request.path %}
+  </div>         
+{% endif %}
 <!--  /top header  -->

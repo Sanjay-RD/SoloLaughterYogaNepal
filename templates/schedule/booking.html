@@ -1,0 +1,334 @@
+{% extends 'base.html' %} {% block content %}
+<header class="home3">
+  {% include 'partials/_topbar.html' %} {% include 'partials/_navbar.html' %}
+  <div class="inner-header">
+    <div class="container">
+      <div class="col-md-12">
+        <!-- heading-text  -->
+        <div class="heading-text">
+          <h1>Booking</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            <li><a href="#">Service</a></li>
+          </ul>
+        </div>
+        <!-- /heading-text  -->
+      </div>
+    </div>
+  </div>
+</header>
+<section class="inner-main">
+  <!-- inner-main -->
+  <div class="container">
+    <div class="row">
+      <!-- rightside -->
+      <div class="col-md-12">
+        <ul class="simplefilter">
+          <li class="active" data-filter="all">All</li>
+          <li data-filter="1">Gym</li>
+          <li data-filter="2">yoga</li>
+          <li data-filter="3">DANCE</li>
+        </ul>
+        <div class="filtr-container">
+          <!-- .calculater -->
+          <div
+            class="calculater filtr-item"
+            data-category="1, 5"
+            data-sort="Busy streets"
+          >
+            <!-- cal-outer  -->
+            <div class="cal-outer">
+              <div class="month">
+                <ul>
+                  <li class="next">&#10095;</li>
+                  <li style="text-align: center">Feb 2018</li>
+                </ul>
+              </div>
+              <ul class="weekdays">
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WEB</li>
+                <li>Thu</li>
+                <li>fri</li>
+                <li>sat</li>
+                <li>sun</li>
+              </ul>
+              <ul class="days">
+                <li class="dissble">30</li>
+                <li class="dissble">31</li>
+                <li class="pink">01</li>
+                <li class="pink">02</li>
+                <li class="pink">03</li>
+                <li class="pink">04</li>
+                <li class="pink">05</li>
+                <li class="pink">06</li>
+                <li class="pink">07</li>
+                <li>08</li>
+                <li>09</li>
+                <li class="pink">10</li>
+                <li class="pink">11</li>
+                <li class="pink">12</li>
+                <li>13</li>
+                <li class="pink">14</li>
+                <li><a class="active">15</a></li>
+                <li>16</li>
+                <li class="pink">17</li>
+                <li>18</li>
+                <li>19</li>
+                <li class="available-appointment">
+                  <div class="title-bg">
+                    <h6>AVAILABLE APPOINTMENT</h6>
+                  </div>
+                  <!-- appointment-content -->
+                  <div class="appointment-content">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="time-text">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM
+                        - 9:00 AM
+                      </div>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-4 col-md-4">
+                      <div class="slots out">0 time slots available</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <a class="unavallable" href="#">UNAVALLABLE</a>
+                    </div>
+                  </div>
+                  <!-- /appointment-content -->
+                  <!-- appointment-content -->
+                  <div class="appointment-content">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="time-text">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM
+                        - 9:00 AM
+                      </div>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-4 col-md-4">
+                      <div class="slots out">0 time slots available</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <a class="unavallable" href="#">UNAVALLABLE</a>
+                    </div>
+                  </div>
+                  <!-- /appointment-content -->
+                  <!-- appointment-content -->
+                  <div class="appointment-content">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="time-text">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM
+                        - 9:00 AM
+                      </div>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-4 col-md-4">
+                      <div class="slots">0 time slots available</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <a
+                        href="#"
+                        class="avallable"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        data-whatever="@mdo"
+                        >BOOK now</a
+                      >
+                    </div>
+                  </div>
+                  <!-- /appointment-content -->
+                  <!-- appointment-content -->
+                  <div class="appointment-content">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="time-text">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM
+                        - 9:00 AM
+                      </div>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-4 col-md-4">
+                      <div class="slots">1 time slots available</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <a
+                        href="#"
+                        class="avallable"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        data-whatever="@mdo"
+                        >BOOK now</a
+                      >
+                    </div>
+                  </div>
+                  <!-- /appointment-content -->
+                  <!-- appointment-content -->
+                  <div class="appointment-content">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="time-text">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM
+                        - 9:00 AM
+                      </div>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-4 col-md-4">
+                      <div class="slots">3 time slots available</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <a
+                        href="#"
+                        class="avallable"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        data-whatever="@mdo"
+                        >BOOK now</a
+                      >
+                    </div>
+                  </div>
+                  <!-- /appointment-content -->
+                  <!-- appointment-content -->
+                  <div class="appointment-content">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="time-text">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM
+                        - 9:00 AM
+                      </div>
+                    </div>
+                    <div class="text-center col-xs-12 col-sm-4 col-md-4">
+                      <div class="slots">5 time slots available</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <a
+                        href="#"
+                        class="avallable"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        data-whatever="@mdo"
+                        >BOOK now</a
+                      >
+                    </div>
+                  </div>
+                  <!-- /appointment-content -->
+                </li>
+
+                <li>20</li>
+                <li>21</li>
+                <li class="pink">22</li>
+                <li class="pink">23</li>
+                <li>24</li>
+                <li class="pink">25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li class="dissble">01</li>
+                <li class="dissble">02</li>
+                <li class="dissble">03</li>
+                <li class="dissble">04</li>
+                <li class="dissble">05</li>
+              </ul>
+            </div>
+            <!-- /cal-outer  -->
+          </div>
+        </div>
+      </div>
+      <!-- rightside -->
+    </div>
+  </div>
+  <!-- /inner-main -->
+</section>
+<!-- available-appointment-popup -->
+<div
+  class="appointment-popup modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Request an Appointment
+        </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <p>
+            Please confirm that you would like to request the following <br />
+            appointment:
+          </p>
+          <div class="popup-date">
+            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+            <span>July 20, 2018 at 10:00 am – 11:00 am</span>
+          </div>
+          <div class="form-group">
+            <h3>Your Information <span>*:</span></h3>
+            <p>Please enter your name:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="recipient-name"
+              placeholder="Name *"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              class="form-control"
+              id="recipient-phone"
+              placeholder="Phone *"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="recipient-email"
+              placeholder="Email *"
+            />
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="exampleSelect1">
+              <option>Choose Our Staff :</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Services <span>*:</span></p>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" value="" type="checkbox" /> Gym
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" value="" type="checkbox" /> Yoga
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" value="" type="checkbox" />
+                Dance Fitness
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" value="" type="checkbox" />
+                Swimming
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">
+          Request an Appointment
+        </button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /available-appointment-popup -->
+{% endblock %}
