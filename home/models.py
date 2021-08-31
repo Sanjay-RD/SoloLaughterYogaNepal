@@ -15,3 +15,15 @@ class Trainer(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Schedule(models.Model):
+    trainer = models.ForeignKey(Trainer,on_delete=models.DO_NOTHING)
+    title = models.CharField(max_length=100)
+    starting_time = models.TimeField()
+    ending_time = models.TimeField()
+    cover_image = models.ImageField(upload_to="dbImage/schedule")
+    date = models.DateTimeField(default=datetime.now)
+
+    def __str__(self):
+        return self.title

@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'schedule.apps.ScheduleConfig',
     'pages.apps.PagesConfig',
     'blog.apps.BlogConfig',
+    'django.contrib.humanize',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

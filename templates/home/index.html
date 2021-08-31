@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %}
 <header>
   {% include 'partials/_navbar.html' %}
   <!--  header-bg  -->
@@ -167,168 +169,66 @@
       <h2>Schedule</h2>
     </div>
     <div class="owl-carousel owl-theme schedule-carousel">
-      <div class="item">
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img1.jpg' %}" alt="13" />
+      {% if schedules_one %}
+        <div class="item">
+          {% for schedule in schedules_one %}
+            <div class="col-sm-6 col-md-6">
+              <div class="schedule-box">
+                <div class="col-md-6">
+                  <img src="{{ schedule.cover_image.url }}" alt="13" />
+                </div>
+                <div class="col-md-6">
+                  <a href="#">{{ schedule.title }}</a>
+                  <p>Trainer : {{ schedule.trainer }}</p>
+                  <p class="date">{{ schedule.date }} <br />{{ schedule.starting_time }} - {{ schedule.ending_time }}</p>
+                  <a href="#" class="join">Join now!</a>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
+          {% endfor %}
         </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img2.jpg' %}" alt="13" />
+        {% endif %}
+        
+      {% if schedules_two %}
+        <div class="item">
+          {% for schedule in schedules_two %}
+            <div class="col-sm-6 col-md-6">
+              <div class="schedule-box">
+                <div class="col-md-6">
+                  <img src="{{ schedule.cover_image.url }}" alt="13" />
+                </div>
+                <div class="col-md-6">
+                  <a href="#">{{ schedule.title }}</a>
+                  <p>Trainer : {{ schedule.trainer }}</p>
+                  <p class="date">{{ schedule.date }} <br />{{ schedule.starting_time }} - {{ schedule.ending_time }}</p>
+                  <a href="#" class="join">Join now!</a>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
+          {% endfor %}
         </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img3.jpg' %}" alt="13" />
+      {% endif %}
+      
+      {% if schedules_three %}
+        <div class="item">
+          {% for schedule in schedules_three %}
+            <div class="col-sm-6 col-md-6">
+              <div class="schedule-box">
+                <div class="col-md-6">
+                  <img src="{{ schedule.cover_image.url }}" alt="13" />
+                </div>
+                <div class="col-md-6">
+                  <a href="#">{{ schedule.title }}</a>
+                  <p>Trainer : {{ schedule.trainer }}</p>
+                  <p class="date">{{ schedule.date }} <br />{{ schedule.starting_time }} - {{ schedule.ending_time }}</p>
+                  <a href="#" class="join">Join now!</a>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
+          {% endfor %}
         </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img4.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img5.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img2.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img3.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img4.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img5.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img1.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img1.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class="schedule-box">
-            <div class="col-md-6">
-              <img src="{% static 'images/schudel-img1.jpg' %}" alt="13" />
-            </div>
-            <div class="col-md-6">
-              <a href="#">Dance: Fitness Dance Lessons in SOLO Laughter Yoga</a>
-              <p>Trainer : Arianne Hidi</p>
-              <p class="date">15 / 03 / 2018 <br />6:00 am - 8:00 pm</p>
-              <a href="#" class="join">Join now!</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% endif %}
+      
     </div>
   </div>
   <!--  /schedule  -->
@@ -384,150 +284,6 @@
       {% else %}
       <h1>No Trainer to show</h1>
       {% endif %}
-      <!-- <div class="col-sm-3 col-md-3">
-        <div class="trainer-box">
-          <div class="trainer-img">
-            <img
-              src="{% static 'images/trainer-img1.jpg' %}"
-              alt="trainer-img1"
-            />
-            <a href="#" class="hover">
-              <i class="fa fa-plus" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="trainer-text">
-            <h6>Noah Leonard</h6>
-            Fitness Instructors
-            <div class="shire-icon">
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-facebook" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-twitter" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="col-sm-3 col-md-3">
-        <div class="trainer-box">
-          <div class="trainer-img">
-            <img
-              src="{% static 'images/trainer-img2.jpg' %}"
-              alt="trainer-img2"
-            />
-            <a href="#" class="hover">
-              <i class="fa fa-plus" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="trainer-text">
-            <h6>Noah Leonard</h6>
-            Fitness Instructors
-            <div class="shire-icon">
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-facebook" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-twitter" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="col-sm-3 col-md-3">
-        <div class="trainer-box">
-          <div class="trainer-img">
-            <img
-              src="{% static 'images/trainer-img3.jpg' %}"
-              alt="trainer-img3"
-            />
-            <a href="#" class="hover">
-              <i class="fa fa-plus" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="trainer-text">
-            <h6>Noah Leonard</h6>
-            Fitness Instructors
-            <div class="shire-icon">
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-facebook" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-twitter" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="col-sm-3 col-md-3">
-        <div class="trainer-box">
-          <div class="trainer-img">
-            <img
-              src="{% static 'images/trainer-img4.jpg' %}"
-              alt="trainer-img4"
-            />
-            <a href="#" class="hover">
-              <i class="fa fa-plus" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="trainer-text">
-            <h6>Noah Leonard</h6>
-            Fitness Instructors
-            <div class="shire-icon">
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-facebook" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-twitter" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
   <!--  /trainer  -->
