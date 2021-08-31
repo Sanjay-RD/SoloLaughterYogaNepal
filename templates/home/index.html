@@ -340,8 +340,51 @@
       <h2>Trainer</h2>
     </div>
     <div class="row">
-      <div class="col-sm-3 col-md-3">
-        <!--  trainer-box  -->
+      {% if trainers %} 
+        {% for trainer in trainers %}
+        <div class="col-sm-3 col-md-3">
+          <!--  trainer-box  -->
+          <div class="trainer-box">
+            <div class="trainer-img">
+              <img
+                src="{{ trainer.profile_image.url }}"
+                alt="trainer-img1"
+              />
+              <a href="#" class="hover">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="trainer-text">
+              <h6>{{ trainer.name }}</h6>
+              {{ trainer.specified }}
+              <div class="shire-icon">
+                <ul>
+                  <li>
+                    <a href="{{ trainer.fb_link }}" target="_blank"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="{{ trainer.twitter_link }}" target="_blank"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="{{ trainer.instagram_link }}" target="_blank"
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--  trainer-box end  -->
+        </div>
+        {% endfor %}
+      {% else %}
+      <h1>No Trainer to show</h1>
+      {% endif %}
+      <!-- <div class="col-sm-3 col-md-3">
         <div class="trainer-box">
           <div class="trainer-img">
             <img
@@ -376,10 +419,8 @@
             </div>
           </div>
         </div>
-        <!--  /trainer-box  -->
-      </div>
-      <div class="col-sm-3 col-md-3">
-        <!--  trainer-box  -->
+      </div> -->
+      <!-- <div class="col-sm-3 col-md-3">
         <div class="trainer-box">
           <div class="trainer-img">
             <img
@@ -414,10 +455,8 @@
             </div>
           </div>
         </div>
-        <!--  /trainer-box  -->
-      </div>
-      <div class="col-sm-3 col-md-3">
-        <!--  trainer-box  -->
+      </div> -->
+      <!-- <div class="col-sm-3 col-md-3">
         <div class="trainer-box">
           <div class="trainer-img">
             <img
@@ -452,10 +491,8 @@
             </div>
           </div>
         </div>
-        <!--  /trainer-box  -->
-      </div>
-      <div class="col-sm-3 col-md-3">
-        <!--  trainer-box  -->
+      </div> -->
+      <!-- <div class="col-sm-3 col-md-3">
         <div class="trainer-box">
           <div class="trainer-img">
             <img
@@ -490,8 +527,7 @@
             </div>
           </div>
         </div>
-        <!--  /trainer-box  -->
-      </div>
+      </div> -->
     </div>
   </div>
   <!--  /trainer  -->
