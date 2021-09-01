@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Trainer, Schedule
+from .models import Trainer, Schedule, Intro, Advantage
 # Register your models here.
 
 class TrainerAdmin(admin.ModelAdmin):
@@ -19,5 +19,23 @@ class ScheduleAdmin(admin.ModelAdmin):
     list_per_page=25
 
 
+class IntroAdmin(admin.ModelAdmin):
+    list_display=('id','title','description','is_display')
+    list_display_links=('title',)
+    list_editable = ('is_display',)
+    search_fields = ('title',)
+    list_per_page = 20
+
+
+class AdvantageAdmin(admin.ModelAdmin):
+    list_display = ('id','title','description','is_display')
+    list_display_links = ('title',)
+    list_editable = ('is_display',)
+    search_fields = ('title',)
+    list_per_page = 25
+
+
 admin.site.register(Trainer,TrainerAdmin)
 admin.site.register(Schedule,ScheduleAdmin)
+admin.site.register(Intro,IntroAdmin)
+admin.site.register(Advantage,AdvantageAdmin)

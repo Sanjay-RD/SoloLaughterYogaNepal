@@ -27,3 +27,23 @@ class Schedule(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Intro(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField(max_length=500)
+    image = models.ImageField(upload_to="intro")
+    is_display = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title
+
+
+class Advantage(models.Model):
+    title = models.CharField(max_length=100,blank=True)
+    description = models.TextField(max_length=500,blank=True)
+    icon = models.CharField(max_length=50,blank=True)
+    is_display = models.BooleanField(default=False)
+    
+    def __str__(self):
+        return self.title

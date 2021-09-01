@@ -59,104 +59,62 @@
 <section class="welcome">
   <!--  welcome  -->
   <div class="container">
-    <div class="title">
-      <h2>Wellcome to SOLO Laughter Yoga Nepal</h2>
-      <p>
-        Laughter Yoga is where you can find balance, harmony and energy renewal
-        amidst the hectic bustle of everyday pressures and deadlines. Relax &
-        enjoy a personalized day yoga experiencExperience of Fitness
-      </p>
-    </div>
+    {% if intros %}
+      {% for intro in intros %}
+        <div class="title">
+          <h2>{{ intro.title }}</h2>
+          <p>{{ intro.description }}</p>
+        </div>
+      {% endfor %}
+    {% endif %}
     <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-4">
-        <div class="row welcom-text">
-          <div class="col-sm-9 col-md-9 text-right">
-            <div class="wtext">
-              <h6>You Are Happier</h6>
-              People that did Laughter yoga for an hour have 57% higher happy
-              brain chemical, GABA.
+        {% if advantages_left %}
+          {% for advantage in advantages_left %}
+            <div class="row welcom-text">
+              <div class="col-sm-9 col-md-9 text-right">
+                <div class="wtext">
+                  <h6>{{ advantage.title }}</h6>
+                  {{ advantage.description }}
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-3">
+                <div class="wicon">
+                  <i class="{{ advantage.icon }}" aria-hidden="true"></i>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="wicon">
-              <i class="fa fa-smile-o" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="row welcom-text">
-          <div class="col-sm-9 col-md-9 text-right">
-            <div class="wtext">
-              <h6>Heart Benefits</h6>
-              Yoga can help lower blood pressure, cholesterrol, and blod sugar ,
-              all of which are good
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="wicon">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        <div class="row welcom-text">
-          <div class="col-sm-9 col-md-9 text-right">
-            <div class="wtext">
-              <h6>Better Body Image</h6>
-              Focusing inward during yoga helps you be more satisfied with your
-              body and less critical if it.
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="wicon">
-              <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
+          {% endfor %}
+        {% endif %}
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 text-center">
-        <img src="{% static 'image/laughing1.jpg' %}" alt="13" />
-      </div>
+
+      {% if intros %}
+        {% for intro in intros %}
+          <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+            <img src="{{ intro.image.url }}" alt="13" />
+          </div>
+        {% endfor %}
+      {% endif %}
+      
       <div class="col-xs-12 col-sm-4 col-md-4">
-        <div class="row welcom-text">
-          <div class="col-sm-3 col-md-3">
-            <div class="wicon">
-              <i class="fa fa-moon-o" aria-hidden="true"></i>
+        {% if advantages_right %}
+          {% for advantage in advantages_right %}
+            <div class="row welcom-text">
+              <div class="col-sm-3 col-md-3">
+                <div class="wicon">
+                  <i class="{{ advantage.icon }}" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="col-sm-9 col-md-9 text-right">
+                <div class="wtext">
+                  <h6>{{ advantage.title }}</h6>
+                  {{ advantage.description }}
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-9 col-md-9 text-left">
-            <div class="wtext">
-              <h6>You Sleep Better</h6>
-              45 minutes of yoga can help sleep an hour longer and fall asleep
-              faster.
-            </div>
-          </div>
-        </div>
-        <div class="row welcom-text">
-          <div class="col-sm-3 col-md-3">
-            <div class="wicon">
-              <i class="fa fa-balance-scale" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="col-sm-9 col-md-9 text-left">
-            <div class="wtext">
-              <h6>Top To Toe Tonight</h6>
-              In some pose you’re lifting every pound of your body weight.
-            </div>
-          </div>
-        </div>
-        <div class="row welcom-text">
-          <div class="col-sm-3 col-md-3">
-            <div class="wicon">
-              <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="col-sm-9 col-md-9 text-left">
-            <div class="wtext">
-              <h6>Better Libido</h6>
-              Yoga helps reduce anxiety, increase awareness, and speeds the
-              release of hormones.
-            </div>
-          </div>
-        </div>
+          {% endfor %}
+        {% endif %}
+       
       </div>
     </div>
   </div>
